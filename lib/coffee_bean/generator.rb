@@ -18,6 +18,7 @@ module CoffeeBean
       template('templates/.gitignore', "#{project_name}/.gitignore")
       template('templates/.npmignore', "#{project_name}/.npmignore")
       template('templates/LICENSE.txt', "#{project_name}/LICENSE.txt")
+      template('templates/CHANGELOG.md', "#{project_name}/CHANGELOG.md")
     end
   end
 end
