@@ -19,6 +19,7 @@ module CoffeeBean
       template('templates/.npmignore', "#{project_name}/.npmignore")
       template('templates/LICENSE.txt', "#{project_name}/LICENSE.txt")
       template('templates/CHANGELOG.md', "#{project_name}/CHANGELOG.md")
+      template('templates/README.md', "#{project_name}/README.md")
     end
   end
 end
