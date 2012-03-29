@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["David Czarnecki"]
   s.email       = ["me@davidczarnecki.com"]
   s.homepage    = "https://github.com/czarneckid/coffee_bean"
-  s.summary     = %q{A ruby gem for kickstarting a coffeescript project}
-  s.description = %q{A ruby gem for kickstarting a coffeescript project}
+  s.summary     = %q{A ruby gem for kickstarting a CoffeeScript project}
+  s.description = %q{A ruby gem for kickstarting a CoffeeScript project}
 
   s.rubyforge_project = "coffee_bean"
 
