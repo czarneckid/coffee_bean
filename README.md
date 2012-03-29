@@ -10,32 +10,23 @@ A ruby gem for kickstarting a CoffeeScript project.
 
 `coffee_bean new <project name>`
 
-Available options:
+```
+Tasks:
+  coffee_bean help PROJECT_NAME [TASK]  # Describe available tasks or one specific task
+  coffee_bean new PROJECT_NAME          # Create a new CoffeeScript project
 
-`--author-name="David Czarnecki"`
-
-* Description: Author name.
-* Default: `Firstname Lastname`
-
-`--test-framework=test` 
-
-* Description: Test "framework".
-* Default: `test`
-
-`--initial_file=index`
-
-* Description: Initial file to be created that holds the src. In the default case, `src/index.coffee` would be created.
-* Default: `index`
-
-`--project_description`
-
-* Description: Project description.
-* Default: `'A description of the project.'`
-
-`--github_owner=czarneckid`
-
-* Description: GitHub project owner.
-* Default: `owner`
+Options:
+  [--author-name=AUTHOR_NAME]                  # Author name, e.g. David Czarnecki.
+                                               # Default: Firstname Lastname
+  [--test-framework=TEST_FRAMEWORK]            # Test framework, e.g. spec. spec/ and spec_helper.js would be created.
+                                               # Default: test
+  [--initial-file=INITIAL_FILE]                # Initial file, e.g. index. src/index.coffee would be created.
+                                               # Default: index
+  [--project-description=PROJECT_DESCRIPTION]  # Project description, e.g. A description of the project.
+                                               # Default: A description of the project.
+  [--github-owner=GITHUB_OWNER]                # GitHub project owner, e.g. czarneckid
+                                               # Default: owner
+```
 
 ## Contributing to coffee_bean
  
