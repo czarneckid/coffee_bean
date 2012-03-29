@@ -1,0 +1,22 @@
+{
+  "author": "<%= options[:author_name] %>",
+  "name": "<%= project_name %>",
+  "description": "<%= options[:project_description] %>",
+  "version": "0.0.1",
+  "homepage": "http://github.com/<%= options[:github_owner] %>/<%= project_name %>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/<%= options[:github_owner] %>/<%= project_name %>.git"
+  },
+  "main": "./lib/<%= options[:initial_file] %>",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": "~0.6.14"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

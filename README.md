@@ -13,10 +13,24 @@ A ruby gem for kickstarting a CoffeeScript project.
 Available options:
 
 `--author-name="David Czarnecki"` 
+* Description: Author name.
 * Default: `Firstname Lastname`
 
 `--test-framework=test` 
+* Description: Test "framework".
 * Default: `test`
+
+`--initial_file=index`
+* Description: Initial file to be created that holds the src. In the default case, `src/index.coffee` would be created.
+* Default: `index`
+
+`--project_description`
+* Description: Project description.
+* Default: `'A description of the project.'`
+
+`--github_owner=czarneckid`
+* Description: GitHub project owner.
+* Default: `owner`
 
 ## Contributing to coffee_bean
  
