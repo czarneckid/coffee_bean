@@ -12,7 +12,11 @@ A ruby gem for kickstarting a CoffeeScript project.
 
 Available options:
 
-`--author-name="David Czarnecki"`
+`--author-name="David Czarnecki"` 
+* Default: `Firstname Lastname`
+
+`--test-framework=test` 
+* Default: `test`
 
 ## Contributing to coffee_bean
  

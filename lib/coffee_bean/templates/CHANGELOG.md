@@ -1,1 +1,1 @@
-# <%= project_name %> CHANGELOG
+# CHANGELOG
