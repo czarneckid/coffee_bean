@@ -4,12 +4,16 @@ require 'coffee_bean'
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|
-  config.before(:all) do    
-  end
+  def capture(stream)
+    begin
+      stream = stream.to_s
+      eval "$#{stream} = StringIO.new"
+      yield
+      result = eval("$#{stream}").string
+    ensure
+      eval("$#{stream} = #{stream.upcase}")
+    end
 
-  config.before(:each) do
-  end
-
-  config.after(:all) do
+    result
   end
 end
