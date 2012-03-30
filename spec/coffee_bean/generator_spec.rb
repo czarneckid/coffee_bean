@@ -23,8 +23,19 @@ describe CoffeeBean::Generator do
         CoffeeBean::Generator.start(['new', 'beanery'])
       end
 
-      File.directory?(File.dirname(__FILE__) + '/../../beanery').should be_true
-      FileUtils.rm_rf(File.dirname(__FILE__) + '/../../beanery')
+      beanery_directory = File.dirname(__FILE__) + '/../../beanery'
+      File.directory?(beanery_directory).should be_true
+      File.exist?(File.join(beanery_directory, '.gitignore')).should be_true
+      File.exist?(File.join(beanery_directory, '.npmignore')).should be_true
+      File.exist?(File.join(beanery_directory, 'CHANGELOG.md')).should be_true
+      File.exist?(File.join(beanery_directory, 'LICENSE.txt')).should be_true
+      File.exist?(File.join(beanery_directory, 'Makefile')).should be_true
+      File.exist?(File.join(beanery_directory, 'package.json')).should be_true
+      File.exist?(File.join(beanery_directory, 'README.md')).should be_true
+      File.exist?(File.join(beanery_directory, 'src', 'index.coffee')).should be_true
+      File.exist?(File.join(beanery_directory, 'test', 'beanery_test.coffee')).should be_true
+      File.exist?(File.join(beanery_directory, 'test', 'test_helper.js')).should be_true
+      FileUtils.rm_rf(beanery_directory)
     end
   end
 end
