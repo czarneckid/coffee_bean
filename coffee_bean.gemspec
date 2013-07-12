@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/czarneckid/coffee_bean"
   s.summary     = %q{A ruby gem for kickstarting a CoffeeScript project}
   s.description = %q{A ruby gem for kickstarting a CoffeeScript project}
+  s.license     = 'MIT'
 
   s.rubyforge_project = "coffee_bean"
 
