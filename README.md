@@ -5,7 +5,7 @@ A ruby gem for kickstarting a CoffeeScript project.
 ## Installation
 
 `gem install coffee_bean`
-  
+
 ## Usage
 
 `coffee_bean new <project name>`
@@ -29,7 +29,7 @@ Options:
 ```
 
 ## Contributing to coffee_bean
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -40,4 +40,4 @@ Options:
 
 ## Copyright
 
-Copyright (c) 2012-2013 David Czarnecki. See LICENSE.txt for further details.
+Copyright (c) 2012-2014 David Czarnecki. See LICENSE.txt for further details.
